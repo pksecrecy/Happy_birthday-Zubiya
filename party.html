@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!-- <![endif]-->
+
+<script>
+    const config = {
+        birthdate: 'August 1, 2021',
+        name: 'ZUBIYA'
+    };
+
+
+    let countDown = new Date(`${config.birthdate} 00:00:00`).getTime();
+    let now = new Date().getTime(),
+        distance = countDown - now;
+
+
+    if (distance > 0) {
+        window.location = 'index.html'
+    }
+</script>
+
+<head>
+    <title>Happy Birthday</title>
+    <link rel="icon" href="images_or_extras/favicon.ico">
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="Happy Birthday Didi">
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="Birthday, Happy">
+    <!-- Strat of Facebook Meta -->
+    <meta property="og:type" content="E-Greeting" />
+    <meta property="og:image" content="images_or_extras/favicon.ico" />
+    <meta property="og:description" content="Wish you a very Happy Birthday">
+    <!-- End of Facebook Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="styles/loading.css">
+    <link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet/less" href="styles/cake.less">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+
+</head>
+
+<body>
+    <canvas id="c"></canvas>
+    <canvas id="confetti"></canvas>
+
+    <div id="merrywrap" class="merrywrap">
+        <canvas id="snowfall"></canvas>
+        <!-- <div class="giftbox"> -->
+        <div class="cover">
+            <div></div>
+        </div>
+        <div class="box"></div>
+        <!-- </div> -->
+    </div>
+    <div class="loading"></div>
+
+    <div id="king">
+
+
+        <div class="wrapper">
+            <div class="img-area">
+                <div class="single-img img-one">
+                    <img src="images_or_extras/aaa.jpg" alt="">
+                </div>
+                <div class="single-img img-two">
+                    <img src="images_or_extras/bbb.jpg" alt="">
+                </div>
+                <div class="single-img img-three">
+                    <img src="images_or_extras/ddd.jpeg" alt="">
+                </div>
+                <div class="single-img img-four">
+                    <img src="images_or_extras/ccc.jpg" alt="">
+                </div>
+                <div class="single-img img-five">
+                    <img src="images_or_extras/eee.jpeg" alt="">
+                </div>
+                <div class="single-img img-six">
+                    <img src="images_or_extras/fff.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <img src="images_or_extras/guitarman.gif" alt="Gif" width="200vw" height="400vh" style="position: fixed;bottom: -50px;left:-20px;display: none;z-index: 9999999999;" id="guitarman">
+    <audio class="song" controls loop>
+        <source src="images_or_extras/hbd.mp3"></source>
+	   Your browser isn't invited for super fun audio time.
+    </audio>
+    <div id="fullscreen">
+        <div class="contain">
+            <div class="balloons text-center" style="margin:-10px" id="b1">
+                <h2 style="color:#F2B300;">Z</h2>
+            </div>
+            <div class="balloons text-center" id="b2">
+                <h2 style="color:#0719D4;">U</h2>
+            </div>
+            <div class="balloons text-center" id="b3">
+                <h2 style="color:#D14D39;">B</h2>
+            </div>
+            <div class="balloons text-center" id="b4">
+                <h2 style="color:#8FAD00;">I</h2>
+            </div>
+            <div class="balloons text-center" id="b5">
+                <h2 style="color:#8377E4;">I</h2>
+            </div>
+
+        </div>
+
+        <img src="images_or_extras/Balloon-Border.png" width="100%" class="balloon-border">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-2 col-xs-2 bulb-holder">
+                    <div class="bulb" id="bulb_yellow"></div>
+                </div>
+                <div class="col-md-2 col-xs-2 bulb-holder">
+                    <div class="bulb" id="bulb_red"></div>
+                </div>
+                <div class="col-md-2 col-xs-2 bulb-holder">
+                    <div class="bulb" id="bulb_blue"></div>
+                </div>
+                <div class="col-md-2 col-xs-2 bulb-holder">
+                    <div class="bulb" id="bulb_green"></div>
+                </div>
+                <div class="col-md-2 col-xs-2 bulb-holder">
+                    <div class="bulb" id="bulb_pink"></div>
+                </div>
+                <div class="col-md-2 col-xs-2 bulb-holder">
+                    <div class="bulb" id="bulb_orange"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="images_or_extras/banner.png" class="bannar">
+                </div>
+            </div>
+            <div class="row cake-cover">
+                <div class="col-md-12 texr-center">
+                    <div class="cake">
+                        <div class="velas">
+                            <div class="fuego"></div>
+                            <div class="fuego"></div>
+                            <div class="fuego"></div>
+                            <div class="fuego"></div>
+                            <div class="fuego"></div>
+                        </div>
+                        <div class="cobertura"></div>
+                        <div class="bizcocho"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row message">
+                <div class="col-md-12" style="z-index: 99999999999999999999999999999999999;">
+                    <p>Today is...</p>
+                    <p>as beautiful as other days but something special</p>
+                    <p>and you realize</p>
+                    <p>another year has gone</p>
+                    <p>in a blink of the eyes</p>
+                    <p>You have grown sixteen now it just feels like it was yesterday only when we celebrated ur 15th birthday </p>
+                    <p>Do you know..?</p>
+                    <p>how important you are to me </p>
+                    <p>You mean the world to me </p>
+                    <p>that's why</p>
+                    <p>Let's make it...</p>
+                    <p>the best celebration ever</p>
+                    <p>and let me share...</p>
+                    <p>a piece of happiness to you</p>
+                    <p>I made all this with coding...</p>
+                    <p>as a birthday present to you</p>
+                    <p>thanks for being there</p>
+                    <p>thanks for the friendship and bond we made</p>
+                    <p>thanks for everything</p>
+                    <p>I wish you all the best</p>
+                    <p>May your life be at ease</p>
+                    <p>May all your wishes come true</p>
+                    <p>Remember</p>
+                    <p>your ambitions</p>
+                    <p>you live as a free bird...</p>
+                    <p>flying in the blue sky</p>
+                    <p>Now things are different...</p>
+                    <p>real story of your life</p>
+                    <p>is just about to begin</p>
+                    <p>indeed..</p>
+                    <p>but...</p>
+                    <p>don't worry</p>
+                    <p>because...</p>
+                    <p>God has your back and has sent me to help u out</p>
+                    <p>and</p>
+                    <p>this year was not a good one but hopefully rest of the life be better</p>
+                    <p>and I hope</p>
+                    <p>you'll find...</p>
+                    <p>happiness along the way</p>
+                    <p>keep your spirit up</p>
+                    <p>enjoy every single moment...</p>
+                    <p>that you experience today</p>
+                    <p>fill it with your most beautiful smile</p>
+                    <p>and make it the best memory..</p>
+                    <p>lastly...</p>
+                    <p>I'd like to wish you one more time</p>
+                    <p>a very Happy Birthday Zubiya</p>
+                </div>
+            </div>
+
+            <div class="navbar navbar-fixed-bottom">
+                <div class="row">
+                    <div class="col-md-6 text-center col-md-offset-3">
+                        <button class="btn btn-primary" id="turn_on">Turn On Lights</button>
+                        <button class="btn btn-primary" id="play">Play Music</button>
+                        <button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
+                        <button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
+                        <button class="btn btn-primary" id="cake_fadein">Most Delicious Cake Ever</button>
+                        <button class="btn btn-primary" id="light_candle"> Light Candle</button>
+                        <button class="btn btn-primary" id="wish_message">Happy Birthday</button>
+                        <button class="btn btn-primary" id="story">A mesage for you</button>
+                        <button class="btn btn-primary" id="end_card">Now to end it, Here's a card for u</button>
+                        <button class="btn btn-primary" id="blow_candle">Blow Candles</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="script/effect.js"></script>
+<script src="script/confetti.min.js"></script>
+
+
+</html>
