@@ -25,7 +25,10 @@ button {
 }
 
 .peach {
-    background-color: #FFDAB9;
+    background: rgb(244,194,194);
+    background: linear-gradient(180deg, rgba(244,194,194,1) 0%, rgba(249,227,227,1) 47%, rgba(0,212,255,1) 100%);
+    height: 100vh;
+    background-repeat: no-repeat;
 }
 
 .peach-after {
